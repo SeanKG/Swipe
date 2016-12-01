@@ -24,7 +24,7 @@
 
 
 .is-transitioning{
-  transition: margin-left, 1s;
+  transition: margin-left, .5s;
 }
 
 

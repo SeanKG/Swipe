@@ -38,11 +38,12 @@
         swipeEl.classList.add('is-transitioning');
         swipeEl.style.marginLeft = `${state.marginLeft}px`;
 
-        window.addEventListener(() => {
+        window.setTimeout(() => {
             swipeEl.classList.remove('is-transitioning');
-        }, 200);
+        }, 500);
 
         console.log(state);
+        state.velocity = 0;
 
 
     }
