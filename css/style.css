@@ -1,0 +1,48 @@
+.container {
+  width:100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.swipe-items {
+  width: 300%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  transition: margin-left, 1ms;
+
+  
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+
+.is-transitioning{
+  transition: margin-left, 1s;
+}
+
+
+.swipe-item {
+  display: block;
+  float: left;
+  height: 100%;
+  flex:1;
+}
+
+.one {
+  background: #f5a;
+}
+
+.two {
+  background: #a5f;
+}
+
+.three {
+  background: #5af;
+}
