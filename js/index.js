@@ -61,9 +61,9 @@
         let {velocity} = state;
         console.log(velocity);
 
-        if(velocity > 0.2){
+        if(velocity > 0.05){
             change(1);
-        } else if (velocity < -0.2){
+        } else if (velocity < -0.05){
             change(-1);
         } else {
             change(0);
