@@ -49,11 +49,11 @@
     }
 
     ct.addEventListener('touchstart', function (event) {
-        state.marginLeft = 0;
+        mouseDown = true;
         state.startPos = event.changedTouches[0].pageX;
         state.currentPos = event.changedTouches[0].pageX;
-        // updateEl();
-        mouseDown = true;
+
+        updateEl();
     });
 
     document.addEventListener('touchend', function (event) {
@@ -84,7 +84,7 @@
             //console.log(v);
             lastMove = thisMove;
             state.velocity = v;
-            state.marginLeft = state.currentPos - state.startPos;
+            state.marginLeft = (state.currentPos - state.startPos) + (state.slideNum * ct.offsetWidth);
             updateEl();
         }
     });
